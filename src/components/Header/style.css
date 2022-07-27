@@ -1,0 +1,11 @@
+.header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    max-height: 80px;
+    font-size: 5.5vh;
+    background-color: gray;
+    color: orange;
+}
