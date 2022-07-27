@@ -1,10 +1,10 @@
 import "./style.css"
 
-export default function MoviePoster() {
+export default function MoviePoster({posterURL, title, key}) {
     return (
         <>
             <div className="movie-poster">
-                <img src='' alt='' />    
+                <img src={posterURL} alt={title} />    
             </div>        
         </>
     )

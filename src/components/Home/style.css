@@ -1,0 +1,17 @@
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.movie-posters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 35px auto;
+    width: 100vw;
+}
