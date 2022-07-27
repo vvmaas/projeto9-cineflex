@@ -1,6 +1,6 @@
+import "./style.css"
 import { useState, useEffect } from 'react'
 import MoviePoster from "./MoviePoster/MoviePoster"
-import "./style.css"
 import axios from 'axios'
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         <>
         <span>Selecione o filme</span>
         <div className="movie-posters">
-            {movieObjs.map(movie => <MoviePoster title={movie.title} posterURL={movie.posterURL} key={movie.id}/>)}
+            {movieObjs.map((movie, index) => <MoviePoster title={movie.title} posterURL={movie.posterURL} id={index+1}/>)}
         </div>
         </>
     )

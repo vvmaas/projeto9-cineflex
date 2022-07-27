@@ -1,5 +1,10 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "../Header/Header"
 import Home from "../Home/Home"
+import Seats from "../Seats/Seats"
+import Session from "../Sessions/Sessions"
+import Success from "../Success/Success"
+
 
 import "./style.css"
 
@@ -7,8 +12,15 @@ import "./style.css"
 export default function App() {
     return (
         <div>
-        <Header />
-        <Home />
+        <BrowserRouter>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/sessoes" element={<Session />} />
+                <Route path="/assentos" element={<Seats />} />
+                <Route path="/sucesso" element={<Success />} />
+            </Routes>    
+        </BrowserRouter>
         </div>
     )
 }
