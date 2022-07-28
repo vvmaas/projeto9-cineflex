@@ -1,0 +1,18 @@
+.seats-input div {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto 15px auto;
+    font-size: 22px;
+    font-weight: 300;
+}
+.seats-input div input {
+    height: 5vh;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.seats-input {
+    margin-top: 20px;
+}

@@ -1,0 +1,33 @@
+.seats-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95vw;
+    margin: 20px auto;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.final-button {
+    width: 45vw;
+    color: white;
+    background: #E8833A;
+    border-radius: 3px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  5vh auto 0 auto;
+    text-align: center;
+    cursor: pointer;
+}

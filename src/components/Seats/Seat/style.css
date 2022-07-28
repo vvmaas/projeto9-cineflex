@@ -1,0 +1,26 @@
+.seat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+    margin: 9px 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.gray {
+    background-color: #C3CFD9;
+    border: 1px solid #808F9D;
+}
+
+.yellow {
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
+
+.blue {
+    background: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}

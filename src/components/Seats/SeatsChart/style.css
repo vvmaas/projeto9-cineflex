@@ -1,0 +1,36 @@
+.seat-chart {
+    width: 90vw;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.unavailable, .available, .selected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unavailable .circle, .available .circle, .selected .circle {
+    border-radius: 20px;
+    height: 32px;
+    width: 32px;
+    margin-bottom: 9px;
+}
+
+.unavailable .circle {
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
+
+.available .circle {
+    background-color: #C3CFD9;
+    border: 1px solid #808F9D;
+}
+
+.selected .circle {
+    background: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}
