@@ -30,6 +30,14 @@ export default function Seats() {
         <Link to="/sucesso">
             <div className="final-button">Reservar assento(s)</div>
         </Link>
+
+        <div className="bottom-bar-seat">
+            {seatsObjs.map(seats => <img className="movie-poster-seat" src={seats.movie.posterURL} alt={seats.movie.title} />)}
+            <div className="bottom-bar-text">
+            {seatsObjs.map(seats => <span className="movie-title-seat"> {seats.movie.title} </span>)}
+            {seatsObjs.map(seats => <span className="movie-time-seat"> {seats.day.weekday} - {seats.name} </span>)}
+            </div>
+        </div>
         </>
     )
 }

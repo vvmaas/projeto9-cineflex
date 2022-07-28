@@ -6,7 +6,7 @@ import axios from 'axios'
 export default function Home() {
 
     const [movieObjs, setMovieObjs] = useState([])
-    console.log(movieObjs)
+    
     useEffect(() => {    
         const promise = axios.get('https://mock-api.driven.com.br/api/v5/cineflex/movies')
         promise.then((res) => {setMovieObjs([...res.data]);})

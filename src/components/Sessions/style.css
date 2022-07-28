@@ -1,4 +1,4 @@
-span {
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,3 +7,40 @@ span {
     margin-top: 50px;
     font-weight: 300;
 }
+
+.bottom-bar {
+    position: fixed;
+    display: flex;
+justify-content: center;
+    height: 110px;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: #DFE6ED;
+border: 1px solid #9EADBA;
+}
+
+.bottom-bar .movie-title {
+    font-size: 26px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.bottom-bar .movie-poster  {
+    height: 90px;
+    width: 75px;
+    margin-left: 10px;
+}
+
+.bottom-bar .movie-poster img {
+    height: 80px;
+    width: 60px;
+}
+
+.sessions {
+    margin-bottom: 110px;
+}
+
+

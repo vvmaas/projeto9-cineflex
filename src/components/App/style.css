@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.root {
+body {
     background-color: #f4f4f4;
+    width: 100vw;
 }
