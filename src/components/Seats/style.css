@@ -33,7 +33,7 @@ border: 1px solid #9EADBA;
 .bottom-bar-seat .movie-time-seat, .bottom-bar-seat .movie-title-seat  {
     font-size: 26px;
     margin-right: 10px;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
     margin-left: -35px;
 
@@ -59,4 +59,23 @@ border: 1px solid #9EADBA;
     margin:  5vh auto 150px auto;
     text-align: center;
     cursor: pointer;
+}
+
+.seats-input div {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto 15px auto;
+    font-size: 22px;
+    font-weight: 300;
+}
+.seats-input div input {
+    height: 5vh;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.seats-input {
+    margin-top: 20px;
 }

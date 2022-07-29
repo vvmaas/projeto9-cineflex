@@ -2,7 +2,7 @@ import { useState,useEffect } from "react"
 import "./style.css"
 
 
-export default function Seat({number,available,id}) {
+export default function Seat({number,available,id,ids}) {
     let [color, setColor] = useState('gray')
     
     useEffect(() => {
@@ -15,9 +15,17 @@ export default function Seat({number,available,id}) {
         if (color === 'yellow'){
             alert('Esse assento já foi comprado')
         } else if (color === 'gray'){
+            ids.push(id)
             setColor('blue')
+            console.log(ids)
         } else {
+            for (let i = 0; i<ids.length;i++){
+                if (ids[i] === id) {
+                    ids.splice(i, 1)
+                }
+            }
             setColor('gray')
+            console.log(ids)
         }
     }
     return (

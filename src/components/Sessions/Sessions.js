@@ -12,7 +12,7 @@ export default function Sessions() {
     const [sessionObjs, setSessionObjs] = useState([])
 
     useEffect(() => {
-        const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/movies/${movieId}/showtimes`)
+        const promise = axios.get(`https://mock-api.driven.com.br/api/v7/cineflex/movies/${movieId}/showtimes`)
         promise.then((res) => setSessionObjs([res.data]))
     }, [])
 
