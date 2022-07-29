@@ -2,7 +2,7 @@ import { useState,useEffect } from "react"
 import "./style.css"
 
 
-export default function Seat({number,available,id,ids}) {
+export default function Seat({number,available,id,ids,checkLink}) {
     let [color, setColor] = useState('gray')
     
     useEffect(() => {
@@ -18,6 +18,7 @@ export default function Seat({number,available,id,ids}) {
             ids.push(id)
             setColor('blue')
             console.log(ids)
+            checkLink()
         } else {
             for (let i = 0; i<ids.length;i++){
                 if (ids[i] === id) {
@@ -26,6 +27,7 @@ export default function Seat({number,available,id,ids}) {
             }
             setColor('gray')
             console.log(ids)
+            checkLink()
         }
     }
     return (

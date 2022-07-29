@@ -8,3 +8,7 @@ body {
     background-color: #f4f4f4;
     width: 100vw;
 }
+
+a {
+    text-decoration-line: none;
+}

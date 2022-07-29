@@ -19,7 +19,7 @@ export default function Home() {
 
     return (
         <>
-        <span>Selecione o filme</span>
+        <span className="home-span">Selecione o filme</span>
         <div className="movie-posters">
             {movieObjs.map((movie, index) => <MoviePoster title={movie.title} posterURL={movie.posterURL} id={index+1}/>)}
         </div>

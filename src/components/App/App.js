@@ -11,7 +11,7 @@ import "./style.css"
 
 export default function App() {
     return (
-        <div>
+     
         <BrowserRouter>
             <Header />
             <Routes>
@@ -21,6 +21,6 @@ export default function App() {
                 <Route path="/sucesso" element={<Success />} />
             </Routes>    
         </BrowserRouter>
-        </div>
+    
     )
 }

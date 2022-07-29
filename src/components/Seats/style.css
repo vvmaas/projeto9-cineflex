@@ -31,12 +31,15 @@ border: 1px solid #9EADBA;
 }
 
 .bottom-bar-seat .movie-time-seat, .bottom-bar-seat .movie-title-seat  {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin-left: 20px;
+    font-weight: 300;
     font-size: 26px;
-    margin-right: 10px;
+    text-align: center;
+    font-size: 26px;
     text-align: left;
-    margin-top: 10px;
-    margin-left: -35px;
-
 }
 
 .bottom-bar-seat .movie-poster-seat {
